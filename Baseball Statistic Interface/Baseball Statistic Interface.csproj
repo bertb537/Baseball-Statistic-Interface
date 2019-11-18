@@ -52,6 +52,12 @@
     <Compile Include="Baseball Statistics Interface.Designer.cs">
       <DependentUpon>Baseball Statistics Interface.cs</DependentUpon>
     </Compile>
+    <Compile Include="BatterDataDisplayScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BatterDataDisplayScreen.Designer.cs">
+      <DependentUpon>BatterDataDisplayScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="BatterInfoSelectScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Baseball Statistics Interface.resx">
       <DependentUpon>Baseball Statistics Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatterDataDisplayScreen.resx">
+      <DependentUpon>BatterDataDisplayScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BatterInfoSelectScreen.resx">
       <DependentUpon>BatterInfoSelectScreen.cs</DependentUpon>

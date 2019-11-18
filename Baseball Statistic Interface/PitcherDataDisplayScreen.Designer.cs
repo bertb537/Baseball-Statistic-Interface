@@ -35,11 +35,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.LEFT_HAND_BATTER_LABEL = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.LEFT_OPENER_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
+            this.LEFT_O_TWO_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
+            this.RIGHT_OPENER_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
+            this.RIGHT_O_TWO_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.LEFT_RIGHT_HAND_BATTER)).BeginInit();
             this.LEFT_RIGHT_HAND_BATTER.Panel1.SuspendLayout();
             this.LEFT_RIGHT_HAND_BATTER.Panel2.SuspendLayout();
             this.LEFT_RIGHT_HAND_BATTER.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LEFT_OPENER_DATAGRIDVIEW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LEFT_O_TWO_DATAGRIDVIEW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RIGHT_OPENER_DATAGRIDVIEW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RIGHT_O_TWO_DATAGRIDVIEW)).BeginInit();
             this.SuspendLayout();
             // 
             // PLAYER_NAME_LABEL
@@ -59,12 +66,15 @@
             // 
             // LEFT_RIGHT_HAND_BATTER.Panel1
             // 
-            this.LEFT_RIGHT_HAND_BATTER.Panel1.Controls.Add(this.tableLayoutPanel1);
+            this.LEFT_RIGHT_HAND_BATTER.Panel1.Controls.Add(this.LEFT_O_TWO_DATAGRIDVIEW);
+            this.LEFT_RIGHT_HAND_BATTER.Panel1.Controls.Add(this.LEFT_OPENER_DATAGRIDVIEW);
             this.LEFT_RIGHT_HAND_BATTER.Panel1.Controls.Add(this.LEFT_HAND_BATTER_LABEL);
             this.LEFT_RIGHT_HAND_BATTER.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // LEFT_RIGHT_HAND_BATTER.Panel2
             // 
+            this.LEFT_RIGHT_HAND_BATTER.Panel2.Controls.Add(this.RIGHT_O_TWO_DATAGRIDVIEW);
+            this.LEFT_RIGHT_HAND_BATTER.Panel2.Controls.Add(this.RIGHT_OPENER_DATAGRIDVIEW);
             this.LEFT_RIGHT_HAND_BATTER.Panel2.Controls.Add(this.label1);
             this.LEFT_RIGHT_HAND_BATTER.Size = new System.Drawing.Size(1005, 707);
             this.LEFT_RIGHT_HAND_BATTER.SplitterDistance = 500;
@@ -121,18 +131,37 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Left-Hand Batter";
             // 
-            // tableLayoutPanel1
+            // LEFT_OPENER_DATAGRIDVIEW
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 75);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(494, 204);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.LEFT_OPENER_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LEFT_OPENER_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 64);
+            this.LEFT_OPENER_DATAGRIDVIEW.Name = "LEFT_OPENER_DATAGRIDVIEW";
+            this.LEFT_OPENER_DATAGRIDVIEW.Size = new System.Drawing.Size(494, 256);
+            this.LEFT_OPENER_DATAGRIDVIEW.TabIndex = 1;
+            // 
+            // LEFT_O_TWO_DATAGRIDVIEW
+            // 
+            this.LEFT_O_TWO_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LEFT_O_TWO_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 384);
+            this.LEFT_O_TWO_DATAGRIDVIEW.Name = "LEFT_O_TWO_DATAGRIDVIEW";
+            this.LEFT_O_TWO_DATAGRIDVIEW.Size = new System.Drawing.Size(494, 256);
+            this.LEFT_O_TWO_DATAGRIDVIEW.TabIndex = 2;
+            // 
+            // RIGHT_OPENER_DATAGRIDVIEW
+            // 
+            this.RIGHT_OPENER_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RIGHT_OPENER_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 64);
+            this.RIGHT_OPENER_DATAGRIDVIEW.Name = "RIGHT_OPENER_DATAGRIDVIEW";
+            this.RIGHT_OPENER_DATAGRIDVIEW.Size = new System.Drawing.Size(495, 256);
+            this.RIGHT_OPENER_DATAGRIDVIEW.TabIndex = 2;
+            // 
+            // RIGHT_O_TWO_DATAGRIDVIEW
+            // 
+            this.RIGHT_O_TWO_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RIGHT_O_TWO_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 384);
+            this.RIGHT_O_TWO_DATAGRIDVIEW.Name = "RIGHT_O_TWO_DATAGRIDVIEW";
+            this.RIGHT_O_TWO_DATAGRIDVIEW.Size = new System.Drawing.Size(495, 256);
+            this.RIGHT_O_TWO_DATAGRIDVIEW.TabIndex = 3;
             // 
             // PitcherDataDisplayScreen
             // 
@@ -151,6 +180,10 @@
             this.LEFT_RIGHT_HAND_BATTER.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LEFT_RIGHT_HAND_BATTER)).EndInit();
             this.LEFT_RIGHT_HAND_BATTER.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LEFT_OPENER_DATAGRIDVIEW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LEFT_O_TWO_DATAGRIDVIEW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RIGHT_OPENER_DATAGRIDVIEW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RIGHT_O_TWO_DATAGRIDVIEW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,8 +196,11 @@
         private System.Windows.Forms.Label THROWING_ARM_LABEL;
         private System.Windows.Forms.Label ERA_LABEL;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label LEFT_HAND_BATTER_LABEL;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView LEFT_O_TWO_DATAGRIDVIEW;
+        private System.Windows.Forms.DataGridView LEFT_OPENER_DATAGRIDVIEW;
+        private System.Windows.Forms.DataGridView RIGHT_O_TWO_DATAGRIDVIEW;
+        private System.Windows.Forms.DataGridView RIGHT_OPENER_DATAGRIDVIEW;
     }
 }

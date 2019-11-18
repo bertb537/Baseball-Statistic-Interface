@@ -58,6 +58,12 @@
     <Compile Include="BatterDataDisplayScreen.Designer.cs">
       <DependentUpon>BatterDataDisplayScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="BatterDataDisplayScreenTwo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BatterDataDisplayScreenTwo.Designer.cs">
+      <DependentUpon>BatterDataDisplayScreenTwo.cs</DependentUpon>
+    </Compile>
     <Compile Include="BatterInfoSelectScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BatterDataDisplayScreen.resx">
       <DependentUpon>BatterDataDisplayScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatterDataDisplayScreenTwo.resx">
+      <DependentUpon>BatterDataDisplayScreenTwo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BatterInfoSelectScreen.resx">
       <DependentUpon>BatterInfoSelectScreen.cs</DependentUpon>

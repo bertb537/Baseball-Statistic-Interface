@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.LOGIN_SUBMIT_BUTTON = new System.Windows.Forms.Button();
-            this.PIN_TEXTBOX = new System.Windows.Forms.TextBox();
+            this.PASSWORD_TEXTBOX = new System.Windows.Forms.TextBox();
             this.USERNAME_TEXTBOX = new System.Windows.Forms.TextBox();
-            this.PIN_LABEL = new System.Windows.Forms.Label();
+            this.PASSWORD_LABEL = new System.Windows.Forms.Label();
             this.USERNAM_LABEL = new System.Windows.Forms.Label();
             this.LOGIN_LABEL = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -48,14 +48,14 @@
             this.LOGIN_SUBMIT_BUTTON.UseVisualStyleBackColor = true;
             this.LOGIN_SUBMIT_BUTTON.Click += new System.EventHandler(this.LOGIN_SUBMIT_BUTTON_Click);
             // 
-            // PIN_TEXTBOX
+            // PASSWORD_TEXTBOX
             // 
-            this.PIN_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PIN_TEXTBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PIN_TEXTBOX.Location = new System.Drawing.Point(369, 260);
-            this.PIN_TEXTBOX.Name = "PIN_TEXTBOX";
-            this.PIN_TEXTBOX.Size = new System.Drawing.Size(191, 31);
-            this.PIN_TEXTBOX.TabIndex = 10;
+            this.PASSWORD_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PASSWORD_TEXTBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PASSWORD_TEXTBOX.Location = new System.Drawing.Point(369, 260);
+            this.PASSWORD_TEXTBOX.Name = "PASSWORD_TEXTBOX";
+            this.PASSWORD_TEXTBOX.Size = new System.Drawing.Size(191, 31);
+            this.PASSWORD_TEXTBOX.TabIndex = 10;
             // 
             // USERNAME_TEXTBOX
             // 
@@ -66,16 +66,16 @@
             this.USERNAME_TEXTBOX.Size = new System.Drawing.Size(191, 31);
             this.USERNAME_TEXTBOX.TabIndex = 9;
             // 
-            // PIN_LABEL
+            // PASSWORD_LABEL
             // 
-            this.PIN_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PIN_LABEL.AutoSize = true;
-            this.PIN_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PIN_LABEL.Location = new System.Drawing.Point(295, 260);
-            this.PIN_LABEL.Name = "PIN_LABEL";
-            this.PIN_LABEL.Size = new System.Drawing.Size(68, 31);
-            this.PIN_LABEL.TabIndex = 8;
-            this.PIN_LABEL.Text = "Pin: ";
+            this.PASSWORD_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PASSWORD_LABEL.AutoSize = true;
+            this.PASSWORD_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PASSWORD_LABEL.Location = new System.Drawing.Point(221, 260);
+            this.PASSWORD_LABEL.Name = "PASSWORD_LABEL";
+            this.PASSWORD_LABEL.Size = new System.Drawing.Size(142, 31);
+            this.PASSWORD_LABEL.TabIndex = 8;
+            this.PASSWORD_LABEL.Text = "Password:";
             // 
             // USERNAM_LABEL
             // 
@@ -105,13 +105,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 506);
             this.Controls.Add(this.LOGIN_SUBMIT_BUTTON);
-            this.Controls.Add(this.PIN_TEXTBOX);
+            this.Controls.Add(this.PASSWORD_TEXTBOX);
             this.Controls.Add(this.USERNAME_TEXTBOX);
-            this.Controls.Add(this.PIN_LABEL);
+            this.Controls.Add(this.PASSWORD_LABEL);
             this.Controls.Add(this.USERNAM_LABEL);
             this.Controls.Add(this.LOGIN_LABEL);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,9 +121,9 @@
         #endregion
 
         private System.Windows.Forms.Button LOGIN_SUBMIT_BUTTON;
-        private System.Windows.Forms.TextBox PIN_TEXTBOX;
+        private System.Windows.Forms.TextBox PASSWORD_TEXTBOX;
         private System.Windows.Forms.TextBox USERNAME_TEXTBOX;
-        private System.Windows.Forms.Label PIN_LABEL;
+        private System.Windows.Forms.Label PASSWORD_LABEL;
         private System.Windows.Forms.Label USERNAM_LABEL;
         private System.Windows.Forms.Label LOGIN_LABEL;
     }

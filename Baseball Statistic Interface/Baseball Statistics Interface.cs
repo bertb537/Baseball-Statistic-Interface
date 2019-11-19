@@ -16,5 +16,10 @@ namespace Baseball_Statistic_Interface
         {
             InitializeComponent();
         }
+
+        private void Baseball_Statistics_Interface_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

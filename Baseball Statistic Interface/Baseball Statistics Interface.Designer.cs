@@ -205,6 +205,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Baseball_Statistics_Interface";
             this.Text = "Baseball Statistics Interface";
+            this.Load += new System.EventHandler(this.Baseball_Statistics_Interface_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

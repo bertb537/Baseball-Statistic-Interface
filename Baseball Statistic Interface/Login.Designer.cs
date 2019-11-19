@@ -1,6 +1,6 @@
 ﻿namespace Baseball_Statistic_Interface
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -46,6 +46,7 @@
             this.LOGIN_SUBMIT_BUTTON.TabIndex = 11;
             this.LOGIN_SUBMIT_BUTTON.Text = "Submit";
             this.LOGIN_SUBMIT_BUTTON.UseVisualStyleBackColor = true;
+            this.LOGIN_SUBMIT_BUTTON.Click += new System.EventHandler(this.LOGIN_SUBMIT_BUTTON_Click);
             // 
             // PIN_TEXTBOX
             // 
@@ -98,7 +99,7 @@
             this.LOGIN_LABEL.TabIndex = 6;
             this.LOGIN_LABEL.Text = "Login";
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,8 +110,8 @@
             this.Controls.Add(this.PIN_LABEL);
             this.Controls.Add(this.USERNAM_LABEL);
             this.Controls.Add(this.LOGIN_LABEL);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Login";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,6 +35,7 @@
             this.PITCHER_DATA_BUTTON = new System.Windows.Forms.Button();
             this.GENERAL_TEAM_DATA_BUTTON = new System.Windows.Forms.Button();
             this.TEAM_SELECT_COMBOBOX = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.plateAppearanceEntryScreen1 = new Baseball_Statistic_Interface.PlateAppearanceEntryScreen();
             this.moundAppearanceEntryScreen1 = new Baseball_Statistic_Interface.MoundAppearanceEntryScreen();
             this.batterDataDisplayScreenTwo1 = new Baseball_Statistic_Interface.BatterDataDisplayScreenTwo();
@@ -43,7 +44,6 @@
             this.batterInfoSelectScreen1 = new Baseball_Statistic_Interface.BatterInfoSelectScreen();
             this.pitcherDataSelectScreen1 = new Baseball_Statistic_Interface.PitcherDataSelectScreen();
             this.generalTeamDataScreen1 = new Baseball_Statistic_Interface.GeneralTeamDataScreen();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,6 +124,14 @@
             this.TEAM_SELECT_COMBOBOX.Size = new System.Drawing.Size(163, 28);
             this.TEAM_SELECT_COMBOBOX.TabIndex = 12;
             this.TEAM_SELECT_COMBOBOX.Text = "Team Select";
+            this.TEAM_SELECT_COMBOBOX.SelectedIndexChanged += new System.EventHandler(this.TEAM_SELECT_COMBOBOX_SelectedIndexChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(194, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1011, 779);
+            this.panel2.TabIndex = 22;
             // 
             // plateAppearanceEntryScreen1
             // 
@@ -180,13 +188,6 @@
             this.generalTeamDataScreen1.Name = "generalTeamDataScreen1";
             this.generalTeamDataScreen1.Size = new System.Drawing.Size(1011, 779);
             this.generalTeamDataScreen1.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(194, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1011, 779);
-            this.panel2.TabIndex = 22;
             // 
             // Baseball_Statistics_Interface
             // 

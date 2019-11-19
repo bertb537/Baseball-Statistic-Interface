@@ -27,12 +27,12 @@ namespace Baseball_Statistic_Interface
             bool valid_login = true;
             // Connect to server 
             String connectionString = "server=aura.cset.oit.edu, 5433; database=BonBon; UID=" + USERNAME_TEXTBOX.Text +"; password=" + PASSWORD_TEXTBOX.Text;
-            String query = "SELECT * FROM translate";
+            String query = "SELECT TOP 1 FROM team";
             try
             {
                 SqlConnection sqlConnection = new SqlConnection(connectionString);
-                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
                 sqlConnection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
                 sqlConnection.Close();
             }
             catch

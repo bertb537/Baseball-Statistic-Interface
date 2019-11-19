@@ -44,11 +44,13 @@
             this.batterInfoSelectScreen1 = new Baseball_Statistic_Interface.BatterInfoSelectScreen();
             this.pitcherDataSelectScreen1 = new Baseball_Statistic_Interface.PitcherDataSelectScreen();
             this.generalTeamDataScreen1 = new Baseball_Statistic_Interface.GeneralTeamDataScreen();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.NEW_PLATE_APPEARANCE_BUTTON);
             this.panel1.Controls.Add(this.NEW_MOUND_APPEARANCE_BUTTON);
             this.panel1.Controls.Add(this.BATTER_DATA_BUTTON);
@@ -64,7 +66,7 @@
             // 
             this.NEW_PLATE_APPEARANCE_BUTTON.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.NEW_PLATE_APPEARANCE_BUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NEW_PLATE_APPEARANCE_BUTTON.Location = new System.Drawing.Point(12, 359);
+            this.NEW_PLATE_APPEARANCE_BUTTON.Location = new System.Drawing.Point(12, 379);
             this.NEW_PLATE_APPEARANCE_BUTTON.Name = "NEW_PLATE_APPEARANCE_BUTTON";
             this.NEW_PLATE_APPEARANCE_BUTTON.Size = new System.Drawing.Size(163, 71);
             this.NEW_PLATE_APPEARANCE_BUTTON.TabIndex = 17;
@@ -75,7 +77,7 @@
             // 
             this.NEW_MOUND_APPEARANCE_BUTTON.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.NEW_MOUND_APPEARANCE_BUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NEW_MOUND_APPEARANCE_BUTTON.Location = new System.Drawing.Point(12, 282);
+            this.NEW_MOUND_APPEARANCE_BUTTON.Location = new System.Drawing.Point(12, 302);
             this.NEW_MOUND_APPEARANCE_BUTTON.Name = "NEW_MOUND_APPEARANCE_BUTTON";
             this.NEW_MOUND_APPEARANCE_BUTTON.Size = new System.Drawing.Size(163, 71);
             this.NEW_MOUND_APPEARANCE_BUTTON.TabIndex = 16;
@@ -86,7 +88,7 @@
             // 
             this.BATTER_DATA_BUTTON.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BATTER_DATA_BUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BATTER_DATA_BUTTON.Location = new System.Drawing.Point(12, 205);
+            this.BATTER_DATA_BUTTON.Location = new System.Drawing.Point(12, 225);
             this.BATTER_DATA_BUTTON.Name = "BATTER_DATA_BUTTON";
             this.BATTER_DATA_BUTTON.Size = new System.Drawing.Size(163, 71);
             this.BATTER_DATA_BUTTON.TabIndex = 15;
@@ -97,7 +99,7 @@
             // 
             this.PITCHER_DATA_BUTTON.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.PITCHER_DATA_BUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PITCHER_DATA_BUTTON.Location = new System.Drawing.Point(12, 128);
+            this.PITCHER_DATA_BUTTON.Location = new System.Drawing.Point(12, 148);
             this.PITCHER_DATA_BUTTON.Name = "PITCHER_DATA_BUTTON";
             this.PITCHER_DATA_BUTTON.Size = new System.Drawing.Size(163, 71);
             this.PITCHER_DATA_BUTTON.TabIndex = 14;
@@ -108,7 +110,7 @@
             // 
             this.GENERAL_TEAM_DATA_BUTTON.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.GENERAL_TEAM_DATA_BUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GENERAL_TEAM_DATA_BUTTON.Location = new System.Drawing.Point(12, 51);
+            this.GENERAL_TEAM_DATA_BUTTON.Location = new System.Drawing.Point(12, 71);
             this.GENERAL_TEAM_DATA_BUTTON.Name = "GENERAL_TEAM_DATA_BUTTON";
             this.GENERAL_TEAM_DATA_BUTTON.Size = new System.Drawing.Size(163, 71);
             this.GENERAL_TEAM_DATA_BUTTON.TabIndex = 13;
@@ -119,11 +121,10 @@
             // 
             this.TEAM_SELECT_COMBOBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TEAM_SELECT_COMBOBOX.FormattingEnabled = true;
-            this.TEAM_SELECT_COMBOBOX.Location = new System.Drawing.Point(12, 12);
+            this.TEAM_SELECT_COMBOBOX.Location = new System.Drawing.Point(12, 32);
             this.TEAM_SELECT_COMBOBOX.Name = "TEAM_SELECT_COMBOBOX";
             this.TEAM_SELECT_COMBOBOX.Size = new System.Drawing.Size(163, 28);
             this.TEAM_SELECT_COMBOBOX.TabIndex = 12;
-            this.TEAM_SELECT_COMBOBOX.Text = "Team Select";
             this.TEAM_SELECT_COMBOBOX.SelectedIndexChanged += new System.EventHandler(this.TEAM_SELECT_COMBOBOX_SelectedIndexChanged);
             // 
             // panel2
@@ -189,6 +190,17 @@
             this.generalTeamDataScreen1.Size = new System.Drawing.Size(1011, 779);
             this.generalTeamDataScreen1.TabIndex = 14;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 20);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Select Team";
+            // 
             // Baseball_Statistics_Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,6 +220,7 @@
             this.Text = "Baseball Statistics Interface";
             this.Load += new System.EventHandler(this.Baseball_Statistics_Interface_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,5 +243,6 @@
         private MoundAppearanceEntryScreen moundAppearanceEntryScreen1;
         private PlateAppearanceEntryScreen plateAppearanceEntryScreen1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
     }
 }

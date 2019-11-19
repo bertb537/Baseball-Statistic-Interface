@@ -42,13 +42,13 @@
             this.O_TWO_QUADRANT_LABEL = new System.Windows.Forms.Label();
             this.O_TWO_TEXTBOX = new System.Windows.Forms.TextBox();
             this.O_TWO_LABEL = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.TITLE_LABLE = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SUBMIT_BUTTON
             // 
             this.SUBMIT_BUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SUBMIT_BUTTON.Location = new System.Drawing.Point(212, 465);
+            this.SUBMIT_BUTTON.Location = new System.Drawing.Point(212, 464);
             this.SUBMIT_BUTTON.Name = "SUBMIT_BUTTON";
             this.SUBMIT_BUTTON.Size = new System.Drawing.Size(184, 47);
             this.SUBMIT_BUTTON.TabIndex = 41;
@@ -178,21 +178,21 @@
             this.O_TWO_LABEL.TabIndex = 50;
             this.O_TWO_LABEL.Text = "0-2:";
             // 
-            // label1
+            // TITLE_LABLE
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(300, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(402, 37);
-            this.label1.TabIndex = 54;
-            this.label1.Text = "Mound Appearance Entry";
+            this.TITLE_LABLE.AutoSize = true;
+            this.TITLE_LABLE.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TITLE_LABLE.Location = new System.Drawing.Point(300, 41);
+            this.TITLE_LABLE.Name = "TITLE_LABLE";
+            this.TITLE_LABLE.Size = new System.Drawing.Size(402, 37);
+            this.TITLE_LABLE.TabIndex = 54;
+            this.TITLE_LABLE.Text = "Mound Appearance Entry";
             // 
             // MoundAppearanceEntryScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TITLE_LABLE);
             this.Controls.Add(this.O_TWO_QUADRANT_TEXTBOX);
             this.Controls.Add(this.O_TWO_QUADRANT_LABEL);
             this.Controls.Add(this.O_TWO_TEXTBOX);
@@ -231,6 +231,6 @@
         private System.Windows.Forms.Label O_TWO_QUADRANT_LABEL;
         private System.Windows.Forms.TextBox O_TWO_TEXTBOX;
         private System.Windows.Forms.Label O_TWO_LABEL;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TITLE_LABLE;
     }
 }

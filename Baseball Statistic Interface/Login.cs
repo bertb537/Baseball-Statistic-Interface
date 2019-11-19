@@ -13,6 +13,10 @@ namespace Baseball_Statistic_Interface
 {
     public partial class Login : Form
     {
+
+        public string GetUsername { get { return USERNAME_TEXTBOX.Text; } }
+        public string GetPassword { get { return PASSWORD_TEXTBOX.Text; } }
+
         public Login()
         {
             InitializeComponent();
@@ -39,8 +43,8 @@ namespace Baseball_Statistic_Interface
             if(valid_login)
             {
                 MessageBox.Show("Connection Successful");
-                Baseball_Statistics_Interface bapo = new Baseball_Statistics_Interface();
                 this.Hide();
+                Baseball_Statistics_Interface bapo = new Baseball_Statistics_Interface(this);
                 bapo.Show();
             }
             else

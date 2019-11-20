@@ -54,6 +54,7 @@
             this.SUBMIT_BUTTON.TabIndex = 41;
             this.SUBMIT_BUTTON.Text = "Submit";
             this.SUBMIT_BUTTON.UseVisualStyleBackColor = true;
+            this.SUBMIT_BUTTON.Click += new System.EventHandler(this.SUBMIT_BUTTON_Click);
             // 
             // SELECT_PITCHER_LABEL
             // 
@@ -121,6 +122,7 @@
             // 
             // OPENER_TEXTBOX
             // 
+            this.OPENER_TEXTBOX.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.OPENER_TEXTBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OPENER_TEXTBOX.Location = new System.Drawing.Point(402, 285);
             this.OPENER_TEXTBOX.Name = "OPENER_TEXTBOX";
@@ -135,6 +137,7 @@
             this.OPENER_QUADRANT_TEXTBOX.Name = "OPENER_QUADRANT_TEXTBOX";
             this.OPENER_QUADRANT_TEXTBOX.Size = new System.Drawing.Size(92, 31);
             this.OPENER_QUADRANT_TEXTBOX.TabIndex = 49;
+            this.OPENER_QUADRANT_TEXTBOX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OPENER_QUADRANT_TEXTBOX_KeyPress);
             // 
             // OPENER_QUADRANT_LABEL
             // 
@@ -153,6 +156,7 @@
             this.O_TWO_QUADRANT_TEXTBOX.Name = "O_TWO_QUADRANT_TEXTBOX";
             this.O_TWO_QUADRANT_TEXTBOX.Size = new System.Drawing.Size(92, 31);
             this.O_TWO_QUADRANT_TEXTBOX.TabIndex = 53;
+            this.O_TWO_QUADRANT_TEXTBOX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.O_TWO_QUADRANT_TEXTBOX_KeyPress);
             // 
             // O_TWO_QUADRANT_LABEL
             // 
@@ -166,6 +170,7 @@
             // 
             // O_TWO_TEXTBOX
             // 
+            this.O_TWO_TEXTBOX.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.O_TWO_TEXTBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.O_TWO_TEXTBOX.Location = new System.Drawing.Point(402, 344);
             this.O_TWO_TEXTBOX.Name = "O_TWO_TEXTBOX";

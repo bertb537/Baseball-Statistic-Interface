@@ -104,6 +104,7 @@
             // 
             // FINAL_PITCH_TEXTBOX
             // 
+            this.FINAL_PITCH_TEXTBOX.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.FINAL_PITCH_TEXTBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FINAL_PITCH_TEXTBOX.Location = new System.Drawing.Point(406, 344);
             this.FINAL_PITCH_TEXTBOX.Name = "FINAL_PITCH_TEXTBOX";
@@ -140,6 +141,7 @@
             // 
             // TOTAL_PITCHES_TEXTBOX
             // 
+            this.TOTAL_PITCHES_TEXTBOX.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TOTAL_PITCHES_TEXTBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TOTAL_PITCHES_TEXTBOX.Location = new System.Drawing.Point(406, 282);
             this.TOTAL_PITCHES_TEXTBOX.Name = "TOTAL_PITCHES_TEXTBOX";

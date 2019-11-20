@@ -15,7 +15,7 @@ namespace Baseball_Statistic_Interface
     {
         public string Username { get; set; }
         public string Password { get; set; }
-        public bool TeamSelected { get; set; }
+        public string TeamSelected { get; set; }
 
         public Baseball_Statistics_Interface(Login LoginScreen)
         {
@@ -49,7 +49,7 @@ namespace Baseball_Statistic_Interface
 
         private void TEAM_SELECT_COMBOBOX_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            TeamSelected = TEAM_SELECT_COMBOBOX.Text;
         }
 
         private void GENERAL_TEAM_DATA_BUTTON_Click(object sender, EventArgs e)

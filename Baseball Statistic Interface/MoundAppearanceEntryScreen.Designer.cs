@@ -95,6 +95,7 @@
             this.LEFT_CHECKBOX.TabIndex = 43;
             this.LEFT_CHECKBOX.Text = "Left";
             this.LEFT_CHECKBOX.UseVisualStyleBackColor = true;
+            this.LEFT_CHECKBOX.CheckedChanged += new System.EventHandler(this.LEFT_CHECKBOX_CheckedChanged);
             // 
             // RIGHT_CHECKBOX
             // 
@@ -106,6 +107,7 @@
             this.RIGHT_CHECKBOX.TabIndex = 45;
             this.RIGHT_CHECKBOX.Text = "Right";
             this.RIGHT_CHECKBOX.UseVisualStyleBackColor = true;
+            this.RIGHT_CHECKBOX.CheckedChanged += new System.EventHandler(this.RIGHT_CHECKBOX_CheckedChanged);
             // 
             // OPENER_LABEL
             // 
@@ -124,6 +126,7 @@
             this.OPENER_TEXTBOX.Name = "OPENER_TEXTBOX";
             this.OPENER_TEXTBOX.Size = new System.Drawing.Size(92, 31);
             this.OPENER_TEXTBOX.TabIndex = 47;
+            this.OPENER_TEXTBOX.TextChanged += new System.EventHandler(this.OPENER_TEXTBOX_TextChanged);
             // 
             // OPENER_QUADRANT_TEXTBOX
             // 

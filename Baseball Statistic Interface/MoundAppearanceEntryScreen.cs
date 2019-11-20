@@ -44,5 +44,25 @@ namespace Baseball_Statistic_Interface
             }
             sqlConnection.Close();
         }
+
+        private void LEFT_CHECKBOX_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RIGHT_CHECKBOX.Checked)
+            {
+                RIGHT_CHECKBOX.Checked = false;
+            }
+        }
+
+        private void RIGHT_CHECKBOX_CheckedChanged(object sender, EventArgs e)
+        {
+            if (LEFT_CHECKBOX.Checked)
+            {
+                LEFT_CHECKBOX.Checked = false;
+            }
+        }
+        private void OPENER_TEXTBOX_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

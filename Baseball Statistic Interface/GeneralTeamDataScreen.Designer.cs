@@ -42,9 +42,12 @@
             this.TEAM_NAME_RATIO_DISPLAY.Size = new System.Drawing.Size(266, 31);
             this.TEAM_NAME_RATIO_DISPLAY.TabIndex = 23;
             this.TEAM_NAME_RATIO_DISPLAY.Text = "Team Name: W/T/L";
+            this.TEAM_NAME_RATIO_DISPLAY.Click += new System.EventHandler(this.TEAM_NAME_RATIO_DISPLAY_Click);
             // 
             // GENERAL_DATAGRIDVIEW
             // 
+            this.GENERAL_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GENERAL_DATAGRIDVIEW.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.GENERAL_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GENERAL_DATAGRIDVIEW.Location = new System.Drawing.Point(16, 80);
             this.GENERAL_DATAGRIDVIEW.Name = "GENERAL_DATAGRIDVIEW";
@@ -59,6 +62,7 @@
             this.Controls.Add(this.TEAM_NAME_RATIO_DISPLAY);
             this.Name = "GeneralTeamDataScreen";
             this.Size = new System.Drawing.Size(1011, 779);
+            this.Load += new System.EventHandler(this.GeneralTeamDataScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GENERAL_DATAGRIDVIEW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

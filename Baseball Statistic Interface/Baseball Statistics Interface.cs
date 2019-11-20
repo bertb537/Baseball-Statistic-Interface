@@ -57,6 +57,7 @@ namespace Baseball_Statistic_Interface
             if(TEAM_SELECT_COMBOBOX.Text != null && TEAM_SELECT_COMBOBOX.Text != "")
             {
                 generalTeamDataScreen1.BringToFront();
+                generalTeamDataScreen1.PopulateGridview(Username, Password, TEAM_SELECT_COMBOBOX.Text);
             }
             else
             {

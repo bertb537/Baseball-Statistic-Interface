@@ -51,5 +51,65 @@ namespace Baseball_Statistic_Interface
         {
 
         }
+
+        private void GENERAL_TEAM_DATA_BUTTON_Click(object sender, EventArgs e)
+        {
+            if(TEAM_SELECT_COMBOBOX.Text != null && TEAM_SELECT_COMBOBOX.Text != "")
+            {
+                generalTeamDataScreen1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Please Select a Team");
+            }
+        }
+
+        private void PITCHER_DATA_BUTTON_Click(object sender, EventArgs e)
+        {
+            if (TEAM_SELECT_COMBOBOX.Text != null && TEAM_SELECT_COMBOBOX.Text != "")
+            {
+                pitcherDataSelectScreen1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Please Select a Team");
+            }
+        }
+
+        private void BATTER_DATA_BUTTON_Click(object sender, EventArgs e)
+        {
+            if (TEAM_SELECT_COMBOBOX.Text != null && TEAM_SELECT_COMBOBOX.Text != "")
+            {
+                batterInfoSelectScreen1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Please Select a Team");
+            }
+        }
+
+        private void NEW_MOUND_APPEARANCE_BUTTON_Click(object sender, EventArgs e)
+        {
+            if (TEAM_SELECT_COMBOBOX.Text != null && TEAM_SELECT_COMBOBOX.Text != "")
+            {
+                moundAppearanceEntryScreen1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Please Select a Team");
+            }
+        }
+
+        private void NEW_PLATE_APPEARANCE_BUTTON_Click(object sender, EventArgs e)
+        {
+            if (TEAM_SELECT_COMBOBOX.Text != null && TEAM_SELECT_COMBOBOX.Text != "")
+            {
+                plateAppearanceEntryScreen1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Please Select a Team");
+            }
+        }
     }
 }

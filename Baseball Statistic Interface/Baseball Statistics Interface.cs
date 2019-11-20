@@ -50,6 +50,7 @@ namespace Baseball_Statistic_Interface
         private void TEAM_SELECT_COMBOBOX_SelectedIndexChanged(object sender, EventArgs e)
         {
             TeamSelected = TEAM_SELECT_COMBOBOX.Text;
+            generalTeamDataScreen1.PopulateGridview(Username, Password, TEAM_SELECT_COMBOBOX.Text); 
         }
 
         private void GENERAL_TEAM_DATA_BUTTON_Click(object sender, EventArgs e)

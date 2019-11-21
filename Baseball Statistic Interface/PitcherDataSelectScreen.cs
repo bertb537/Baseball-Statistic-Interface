@@ -50,8 +50,8 @@ namespace Baseball_Statistic_Interface
             PITCHER_SELECT_COMBOBOX.Items.Clear();
             while (myReader.Read())
             {
-                string batterName = myReader.GetString(0);
-                PITCHER_SELECT_COMBOBOX.Items.Add(batterName);
+                string pitcherName = myReader.GetString(0);
+                PITCHER_SELECT_COMBOBOX.Items.Add(pitcherName);
             }
             sqlConnection.Close();
         }

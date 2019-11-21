@@ -55,12 +55,14 @@
             // 
             // BATTER_SELECT_COMBOBOX
             // 
+            this.BATTER_SELECT_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.BATTER_SELECT_COMBOBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BATTER_SELECT_COMBOBOX.FormattingEnabled = true;
             this.BATTER_SELECT_COMBOBOX.Location = new System.Drawing.Point(480, 211);
             this.BATTER_SELECT_COMBOBOX.Name = "BATTER_SELECT_COMBOBOX";
             this.BATTER_SELECT_COMBOBOX.Size = new System.Drawing.Size(258, 33);
             this.BATTER_SELECT_COMBOBOX.TabIndex = 39;
+            this.BATTER_SELECT_COMBOBOX.SelectedIndexChanged += new System.EventHandler(this.BATTER_SELECT_COMBOBOX_SelectedIndexChanged);
             // 
             // BatterInfoSelectScreen
             // 
@@ -71,6 +73,7 @@
             this.Controls.Add(this.BATTER_SELECT_COMBOBOX);
             this.Name = "BatterInfoSelectScreen";
             this.Size = new System.Drawing.Size(1011, 779);
+            this.Load += new System.EventHandler(this.BatterInfoSelectScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

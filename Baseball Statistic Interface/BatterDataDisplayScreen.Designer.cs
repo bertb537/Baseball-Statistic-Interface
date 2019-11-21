@@ -37,22 +37,22 @@
             this.OPS_LABEL = new System.Windows.Forms.Label();
             this.RBI_LABEL = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.LEFT_HAND_BATTER_LABEL = new System.Windows.Forms.Label();
-            this.RIGHT_HAND_BATTER_LABEL = new System.Windows.Forms.Label();
-            this.LEFT_SO_PITCH_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
-            this.LEFT_FASTBALL_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
             this.LEFT_CURVEBALL_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
+            this.LEFT_FASTBALL_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
+            this.LEFT_SO_PITCH_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
+            this.LEFT_HAND_BATTER_LABEL = new System.Windows.Forms.Label();
             this.RIGHT_CURVEBALL_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
             this.RIGHT_FASTBALL_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
             this.RIGHT_SO_PITCH_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
+            this.RIGHT_HAND_BATTER_LABEL = new System.Windows.Forms.Label();
             this.NEXT_BUTTON = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LEFT_SO_PITCH_DATAGRIDVIEW)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LEFT_FASTBALL_DATAGRIDVIEW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LEFT_CURVEBALL_DATAGRIDVIEW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LEFT_FASTBALL_DATAGRIDVIEW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LEFT_SO_PITCH_DATAGRIDVIEW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RIGHT_CURVEBALL_DATAGRIDVIEW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RIGHT_FASTBALL_DATAGRIDVIEW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RIGHT_SO_PITCH_DATAGRIDVIEW)).BeginInit();
@@ -162,33 +162,13 @@
             this.splitContainer1.SplitterDistance = 503;
             this.splitContainer1.TabIndex = 13;
             // 
-            // LEFT_HAND_BATTER_LABEL
+            // LEFT_CURVEBALL_DATAGRIDVIEW
             // 
-            this.LEFT_HAND_BATTER_LABEL.AutoSize = true;
-            this.LEFT_HAND_BATTER_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LEFT_HAND_BATTER_LABEL.Location = new System.Drawing.Point(159, 22);
-            this.LEFT_HAND_BATTER_LABEL.Name = "LEFT_HAND_BATTER_LABEL";
-            this.LEFT_HAND_BATTER_LABEL.Size = new System.Drawing.Size(169, 25);
-            this.LEFT_HAND_BATTER_LABEL.TabIndex = 1;
-            this.LEFT_HAND_BATTER_LABEL.Text = "Left-Hand Batter";
-            // 
-            // RIGHT_HAND_BATTER_LABEL
-            // 
-            this.RIGHT_HAND_BATTER_LABEL.AutoSize = true;
-            this.RIGHT_HAND_BATTER_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RIGHT_HAND_BATTER_LABEL.Location = new System.Drawing.Point(158, 22);
-            this.RIGHT_HAND_BATTER_LABEL.Name = "RIGHT_HAND_BATTER_LABEL";
-            this.RIGHT_HAND_BATTER_LABEL.Size = new System.Drawing.Size(183, 25);
-            this.RIGHT_HAND_BATTER_LABEL.TabIndex = 2;
-            this.RIGHT_HAND_BATTER_LABEL.Text = "Right-Hand Batter";
-            // 
-            // LEFT_SO_PITCH_DATAGRIDVIEW
-            // 
-            this.LEFT_SO_PITCH_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LEFT_SO_PITCH_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 71);
-            this.LEFT_SO_PITCH_DATAGRIDVIEW.Name = "LEFT_SO_PITCH_DATAGRIDVIEW";
-            this.LEFT_SO_PITCH_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
-            this.LEFT_SO_PITCH_DATAGRIDVIEW.TabIndex = 5;
+            this.LEFT_CURVEBALL_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LEFT_CURVEBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 445);
+            this.LEFT_CURVEBALL_DATAGRIDVIEW.Name = "LEFT_CURVEBALL_DATAGRIDVIEW";
+            this.LEFT_CURVEBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
+            this.LEFT_CURVEBALL_DATAGRIDVIEW.TabIndex = 7;
             // 
             // LEFT_FASTBALL_DATAGRIDVIEW
             // 
@@ -198,13 +178,24 @@
             this.LEFT_FASTBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
             this.LEFT_FASTBALL_DATAGRIDVIEW.TabIndex = 6;
             // 
-            // LEFT_CURVEBALL_DATAGRIDVIEW
+            // LEFT_SO_PITCH_DATAGRIDVIEW
             // 
-            this.LEFT_CURVEBALL_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LEFT_CURVEBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 445);
-            this.LEFT_CURVEBALL_DATAGRIDVIEW.Name = "LEFT_CURVEBALL_DATAGRIDVIEW";
-            this.LEFT_CURVEBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
-            this.LEFT_CURVEBALL_DATAGRIDVIEW.TabIndex = 7;
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 71);
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.Name = "LEFT_SO_PITCH_DATAGRIDVIEW";
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.TabIndex = 5;
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LEFT_SO_PITCH_DATAGRIDVIEW_CellContentClick);
+            // 
+            // LEFT_HAND_BATTER_LABEL
+            // 
+            this.LEFT_HAND_BATTER_LABEL.AutoSize = true;
+            this.LEFT_HAND_BATTER_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LEFT_HAND_BATTER_LABEL.Location = new System.Drawing.Point(159, 22);
+            this.LEFT_HAND_BATTER_LABEL.Name = "LEFT_HAND_BATTER_LABEL";
+            this.LEFT_HAND_BATTER_LABEL.Size = new System.Drawing.Size(169, 25);
+            this.LEFT_HAND_BATTER_LABEL.TabIndex = 1;
+            this.LEFT_HAND_BATTER_LABEL.Text = "Left-Hand Batter";
             // 
             // RIGHT_CURVEBALL_DATAGRIDVIEW
             // 
@@ -229,6 +220,16 @@
             this.RIGHT_SO_PITCH_DATAGRIDVIEW.Name = "RIGHT_SO_PITCH_DATAGRIDVIEW";
             this.RIGHT_SO_PITCH_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
             this.RIGHT_SO_PITCH_DATAGRIDVIEW.TabIndex = 8;
+            // 
+            // RIGHT_HAND_BATTER_LABEL
+            // 
+            this.RIGHT_HAND_BATTER_LABEL.AutoSize = true;
+            this.RIGHT_HAND_BATTER_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RIGHT_HAND_BATTER_LABEL.Location = new System.Drawing.Point(158, 22);
+            this.RIGHT_HAND_BATTER_LABEL.Name = "RIGHT_HAND_BATTER_LABEL";
+            this.RIGHT_HAND_BATTER_LABEL.Size = new System.Drawing.Size(183, 25);
+            this.RIGHT_HAND_BATTER_LABEL.TabIndex = 2;
+            this.RIGHT_HAND_BATTER_LABEL.Text = "Right-Hand Batter";
             // 
             // NEXT_BUTTON
             // 
@@ -263,9 +264,9 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.LEFT_SO_PITCH_DATAGRIDVIEW)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LEFT_FASTBALL_DATAGRIDVIEW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LEFT_CURVEBALL_DATAGRIDVIEW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LEFT_FASTBALL_DATAGRIDVIEW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LEFT_SO_PITCH_DATAGRIDVIEW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RIGHT_CURVEBALL_DATAGRIDVIEW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RIGHT_FASTBALL_DATAGRIDVIEW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RIGHT_SO_PITCH_DATAGRIDVIEW)).EndInit();

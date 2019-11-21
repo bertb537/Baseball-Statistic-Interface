@@ -31,5 +31,10 @@ namespace Baseball_Statistic_Interface
         {
 
         }
+
+        private void LEFT_SO_PITCH_DATAGRIDVIEW_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

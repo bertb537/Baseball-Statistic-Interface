@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.NEW_PLATE_APPEARANCE_BUTTON = new System.Windows.Forms.Button();
             this.NEW_MOUND_APPEARANCE_BUTTON = new System.Windows.Forms.Button();
             this.BATTER_DATA_BUTTON = new System.Windows.Forms.Button();
             this.PITCHER_DATA_BUTTON = new System.Windows.Forms.Button();
             this.GENERAL_TEAM_DATA_BUTTON = new System.Windows.Forms.Button();
             this.TEAM_SELECT_COMBOBOX = new System.Windows.Forms.ComboBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.plateAppearanceEntryScreen1 = new Baseball_Statistic_Interface.PlateAppearanceEntryScreen();
             this.moundAppearanceEntryScreen1 = new Baseball_Statistic_Interface.MoundAppearanceEntryScreen();
             this.batterDataDisplayScreenTwo1 = new Baseball_Statistic_Interface.BatterDataDisplayScreenTwo();
@@ -45,6 +44,7 @@
             this.batterInfoSelectScreen1 = new Baseball_Statistic_Interface.BatterInfoSelectScreen();
             this.pitcherDataSelectScreen1 = new Baseball_Statistic_Interface.PitcherDataSelectScreen();
             this.generalTeamDataScreen1 = new Baseball_Statistic_Interface.GeneralTeamDataScreen();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 779);
             this.panel1.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 20);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Select Team";
             // 
             // NEW_PLATE_APPEARANCE_BUTTON
             // 
@@ -134,37 +145,25 @@
             this.TEAM_SELECT_COMBOBOX.TabIndex = 12;
             this.TEAM_SELECT_COMBOBOX.SelectedIndexChanged += new System.EventHandler(this.TEAM_SELECT_COMBOBOX_SelectedIndexChanged);
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(194, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1011, 779);
-            this.panel2.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 20);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Select Team";
-            // 
             // plateAppearanceEntryScreen1
             // 
             this.plateAppearanceEntryScreen1.Location = new System.Drawing.Point(194, 0);
             this.plateAppearanceEntryScreen1.Name = "plateAppearanceEntryScreen1";
+            this.plateAppearanceEntryScreen1.Password = null;
             this.plateAppearanceEntryScreen1.Size = new System.Drawing.Size(1011, 779);
             this.plateAppearanceEntryScreen1.TabIndex = 21;
+            this.plateAppearanceEntryScreen1.TeamName = null;
+            this.plateAppearanceEntryScreen1.Username = null;
             // 
             // moundAppearanceEntryScreen1
             // 
             this.moundAppearanceEntryScreen1.Location = new System.Drawing.Point(194, 0);
             this.moundAppearanceEntryScreen1.Name = "moundAppearanceEntryScreen1";
+            this.moundAppearanceEntryScreen1.Password = null;
             this.moundAppearanceEntryScreen1.Size = new System.Drawing.Size(1011, 779);
             this.moundAppearanceEntryScreen1.TabIndex = 20;
+            this.moundAppearanceEntryScreen1.TeamName = null;
+            this.moundAppearanceEntryScreen1.Username = null;
             // 
             // batterDataDisplayScreenTwo1
             // 
@@ -198,8 +197,11 @@
             // 
             this.pitcherDataSelectScreen1.Location = new System.Drawing.Point(194, 0);
             this.pitcherDataSelectScreen1.Name = "pitcherDataSelectScreen1";
+            this.pitcherDataSelectScreen1.Password = null;
             this.pitcherDataSelectScreen1.Size = new System.Drawing.Size(1011, 779);
             this.pitcherDataSelectScreen1.TabIndex = 15;
+            this.pitcherDataSelectScreen1.TeamName = null;
+            this.pitcherDataSelectScreen1.Username = null;
             // 
             // generalTeamDataScreen1
             // 
@@ -207,6 +209,13 @@
             this.generalTeamDataScreen1.Name = "generalTeamDataScreen1";
             this.generalTeamDataScreen1.Size = new System.Drawing.Size(1011, 779);
             this.generalTeamDataScreen1.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(194, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1011, 779);
+            this.panel2.TabIndex = 22;
             // 
             // Baseball_Statistics_Interface
             // 
@@ -249,7 +258,7 @@
         private BatterDataDisplayScreenTwo batterDataDisplayScreenTwo1;
         private MoundAppearanceEntryScreen moundAppearanceEntryScreen1;
         private PlateAppearanceEntryScreen plateAppearanceEntryScreen1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

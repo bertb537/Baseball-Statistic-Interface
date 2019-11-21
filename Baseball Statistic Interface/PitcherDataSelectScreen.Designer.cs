@@ -42,6 +42,7 @@
             this.SUBMIT_BUTTON.TabIndex = 38;
             this.SUBMIT_BUTTON.Text = "Submit";
             this.SUBMIT_BUTTON.UseVisualStyleBackColor = true;
+            this.SUBMIT_BUTTON.Click += new System.EventHandler(this.SUBMIT_BUTTON_Click);
             // 
             // SELECT_PITCHER_LABEL
             // 
@@ -55,6 +56,7 @@
             // 
             // PITCHER_SELECT_COMBOBOX
             // 
+            this.PITCHER_SELECT_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PITCHER_SELECT_COMBOBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PITCHER_SELECT_COMBOBOX.FormattingEnabled = true;
             this.PITCHER_SELECT_COMBOBOX.Location = new System.Drawing.Point(486, 210);
@@ -71,6 +73,7 @@
             this.Controls.Add(this.PITCHER_SELECT_COMBOBOX);
             this.Name = "PitcherDataSelectScreen";
             this.Size = new System.Drawing.Size(1011, 779);
+            this.Load += new System.EventHandler(this.PitcherDataSelectScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

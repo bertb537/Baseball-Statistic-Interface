@@ -54,6 +54,7 @@ namespace Baseball_Statistic_Interface
             generalTeamDataScreen1.PopulateGridview(Username, Password, TEAM_SELECT_COMBOBOX.Text);
             moundAppearanceEntryScreen1.PopulatePitchersComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text);
             plateAppearanceEntryScreen1.PopulateBatterComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text);
+            pitcherDataSelectScreen1.PopulatePitcherComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text, pitcherDataDisplayScreen1);
         }
 
         private void GENERAL_TEAM_DATA_BUTTON_Click(object sender, EventArgs e)

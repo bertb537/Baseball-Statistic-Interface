@@ -32,8 +32,6 @@
             this.SELECT_PITCHER_LABEL = new System.Windows.Forms.Label();
             this.PITCHER_SELECT_COMBOBOX = new System.Windows.Forms.ComboBox();
             this.BATTER_LABEL = new System.Windows.Forms.Label();
-            this.LEFT_CHECKBOX = new System.Windows.Forms.CheckBox();
-            this.RIGHT_CHECKBOX = new System.Windows.Forms.CheckBox();
             this.OPENER_LABEL = new System.Windows.Forms.Label();
             this.OPENER_TEXTBOX = new System.Windows.Forms.TextBox();
             this.OPENER_QUADRANT_TEXTBOX = new System.Windows.Forms.TextBox();
@@ -43,6 +41,8 @@
             this.O_TWO_TEXTBOX = new System.Windows.Forms.TextBox();
             this.O_TWO_LABEL = new System.Windows.Forms.Label();
             this.TITLE_LABLE = new System.Windows.Forms.Label();
+            this.LEFT_RADIOBUTTON = new System.Windows.Forms.RadioButton();
+            this.RIGHT_RADIOBUTTON = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // SUBMIT_BUTTON
@@ -85,30 +85,6 @@
             this.BATTER_LABEL.Size = new System.Drawing.Size(95, 31);
             this.BATTER_LABEL.TabIndex = 42;
             this.BATTER_LABEL.Text = "Batter:";
-            // 
-            // LEFT_CHECKBOX
-            // 
-            this.LEFT_CHECKBOX.AutoSize = true;
-            this.LEFT_CHECKBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LEFT_CHECKBOX.Location = new System.Drawing.Point(419, 402);
-            this.LEFT_CHECKBOX.Name = "LEFT_CHECKBOX";
-            this.LEFT_CHECKBOX.Size = new System.Drawing.Size(56, 24);
-            this.LEFT_CHECKBOX.TabIndex = 43;
-            this.LEFT_CHECKBOX.Text = "Left";
-            this.LEFT_CHECKBOX.UseVisualStyleBackColor = true;
-            this.LEFT_CHECKBOX.CheckedChanged += new System.EventHandler(this.LEFT_CHECKBOX_CheckedChanged);
-            // 
-            // RIGHT_CHECKBOX
-            // 
-            this.RIGHT_CHECKBOX.AutoSize = true;
-            this.RIGHT_CHECKBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RIGHT_CHECKBOX.Location = new System.Drawing.Point(481, 402);
-            this.RIGHT_CHECKBOX.Name = "RIGHT_CHECKBOX";
-            this.RIGHT_CHECKBOX.Size = new System.Drawing.Size(66, 24);
-            this.RIGHT_CHECKBOX.TabIndex = 45;
-            this.RIGHT_CHECKBOX.Text = "Right";
-            this.RIGHT_CHECKBOX.UseVisualStyleBackColor = true;
-            this.RIGHT_CHECKBOX.CheckedChanged += new System.EventHandler(this.RIGHT_CHECKBOX_CheckedChanged);
             // 
             // OPENER_LABEL
             // 
@@ -197,10 +173,36 @@
             this.TITLE_LABLE.TabIndex = 54;
             this.TITLE_LABLE.Text = "Mound Appearance Entry";
             // 
+            // LEFT_RADIOBUTTON
+            // 
+            this.LEFT_RADIOBUTTON.AutoSize = true;
+            this.LEFT_RADIOBUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LEFT_RADIOBUTTON.Location = new System.Drawing.Point(402, 402);
+            this.LEFT_RADIOBUTTON.Name = "LEFT_RADIOBUTTON";
+            this.LEFT_RADIOBUTTON.Size = new System.Drawing.Size(55, 24);
+            this.LEFT_RADIOBUTTON.TabIndex = 55;
+            this.LEFT_RADIOBUTTON.TabStop = true;
+            this.LEFT_RADIOBUTTON.Text = "Left";
+            this.LEFT_RADIOBUTTON.UseVisualStyleBackColor = true;
+            // 
+            // RIGHT_RADIOBUTTON
+            // 
+            this.RIGHT_RADIOBUTTON.AutoSize = true;
+            this.RIGHT_RADIOBUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RIGHT_RADIOBUTTON.Location = new System.Drawing.Point(463, 402);
+            this.RIGHT_RADIOBUTTON.Name = "RIGHT_RADIOBUTTON";
+            this.RIGHT_RADIOBUTTON.Size = new System.Drawing.Size(65, 24);
+            this.RIGHT_RADIOBUTTON.TabIndex = 56;
+            this.RIGHT_RADIOBUTTON.TabStop = true;
+            this.RIGHT_RADIOBUTTON.Text = "Right";
+            this.RIGHT_RADIOBUTTON.UseVisualStyleBackColor = true;
+            // 
             // MoundAppearanceEntryScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.RIGHT_RADIOBUTTON);
+            this.Controls.Add(this.LEFT_RADIOBUTTON);
             this.Controls.Add(this.TITLE_LABLE);
             this.Controls.Add(this.O_TWO_QUADRANT_TEXTBOX);
             this.Controls.Add(this.O_TWO_QUADRANT_LABEL);
@@ -210,8 +212,6 @@
             this.Controls.Add(this.OPENER_QUADRANT_LABEL);
             this.Controls.Add(this.OPENER_TEXTBOX);
             this.Controls.Add(this.OPENER_LABEL);
-            this.Controls.Add(this.RIGHT_CHECKBOX);
-            this.Controls.Add(this.LEFT_CHECKBOX);
             this.Controls.Add(this.BATTER_LABEL);
             this.Controls.Add(this.SUBMIT_BUTTON);
             this.Controls.Add(this.SELECT_PITCHER_LABEL);
@@ -230,8 +230,6 @@
         private System.Windows.Forms.Label SELECT_PITCHER_LABEL;
         private System.Windows.Forms.ComboBox PITCHER_SELECT_COMBOBOX;
         private System.Windows.Forms.Label BATTER_LABEL;
-        private System.Windows.Forms.CheckBox LEFT_CHECKBOX;
-        private System.Windows.Forms.CheckBox RIGHT_CHECKBOX;
         private System.Windows.Forms.Label OPENER_LABEL;
         private System.Windows.Forms.TextBox OPENER_TEXTBOX;
         private System.Windows.Forms.TextBox OPENER_QUADRANT_TEXTBOX;
@@ -241,5 +239,7 @@
         private System.Windows.Forms.TextBox O_TWO_TEXTBOX;
         private System.Windows.Forms.Label O_TWO_LABEL;
         private System.Windows.Forms.Label TITLE_LABLE;
+        private System.Windows.Forms.RadioButton LEFT_RADIOBUTTON;
+        private System.Windows.Forms.RadioButton RIGHT_RADIOBUTTON;
     }
 }

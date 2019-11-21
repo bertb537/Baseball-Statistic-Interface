@@ -52,22 +52,6 @@ namespace Baseball_Statistic_Interface
             }
             sqlConnection.Close();
         }
-
-        private void LEFT_CHECKBOX_CheckedChanged(object sender, EventArgs e)
-        {
-            if (RIGHT_CHECKBOX.Checked)
-            {
-                RIGHT_CHECKBOX.Checked = false;
-            }
-        }
-
-        private void RIGHT_CHECKBOX_CheckedChanged(object sender, EventArgs e)
-        {
-            if (LEFT_CHECKBOX.Checked)
-            {
-                LEFT_CHECKBOX.Checked = false;
-            }
-        }
         private void OPENER_TEXTBOX_TextChanged(object sender, EventArgs e)
         {
             
@@ -77,7 +61,7 @@ namespace Baseball_Statistic_Interface
         {
             if (PITCHER_SELECT_COMBOBOX.Text == "" || PITCHER_SELECT_COMBOBOX.Text == null || OPENER_TEXTBOX.Text == ""
                 || OPENER_QUADRANT_TEXTBOX.Text == "" || O_TWO_TEXTBOX.Text == "" || O_TWO_QUADRANT_TEXTBOX.Text == ""
-                || (!LEFT_CHECKBOX.Checked && !RIGHT_CHECKBOX.Checked))
+                || (!LEFT_RADIOBUTTON.Checked && !RIGHT_RADIOBUTTON.Checked))
             {
                 MessageBox.Show("Please Complete the Form");
             }
@@ -85,79 +69,47 @@ namespace Baseball_Statistic_Interface
             {
                 // Initialize Connection Strings
                 String connectionString = "server=aura.cset.oit.edu, 5433; database=BonBon; UID=" + Username + "; password=" + Password;
-                String queryThrowingArm = "SELECT throwing_arm FROM player WHERE player_name='" + PITCHER_SELECT_COMBOBOX.Text + "';";
 
                 // Initialize Connection
                 SqlConnection sqlConnection = new SqlConnection(connectionString);
                 sqlConnection.Open();
-
-                // Query for Pitchers Throwing Arm
-                SqlCommand sqlCommand = new SqlCommand(queryThrowingArm, sqlConnection);
-                SqlDataReader myReader;
-                myReader = sqlCommand.ExecuteReader();
-                myReader.Read();
-                string throwingArm = myReader.GetString(0);
-                myReader.Close();
-
+                
                 string battingArm;
-                bool checkBoxW = true;
-                if (LEFT_CHECKBOX.Checked)
-                {
+                if (LEFT_RADIOBUTTON.Checked)
                     battingArm = "L";
-                    // Just an Extra Check
-                    if (RIGHT_CHECKBOX.Checked)
-                    {
-                        MessageBox.Show("You broke the checkbox... again");
-                        checkBoxW = false;
-                        sqlConnection.Close();
-                    }
+                else
+                    battingArm = "R";
+               
+                // Query to Insert
+                String queryInsert = "INSERT INTO moundAppearances VALUES ('" + PITCHER_SELECT_COMBOBOX.Text + "', '" + battingArm +
+                    "', '" + OPENER_TEXTBOX.Text + "', " + Int32.Parse(OPENER_QUADRANT_TEXTBOX.Text) + ", '" + O_TWO_TEXTBOX.Text + "', " +
+                    Int32.Parse(O_TWO_QUADRANT_TEXTBOX.Text) + ");";
+
+                bool passed = false;
+                try
+                {
+                   SqlCommand sqlCommand2 = new SqlCommand(queryInsert, sqlConnection);
+                   sqlCommand2.ExecuteNonQuery();
+                   passed = true;
+                }
+                catch
+                {
+                    MessageBox.Show("Entry Failed");
+                }
+
+                if (passed)
+                {
+                    MessageBox.Show("Successfully Entered");
+                    OPENER_TEXTBOX.Text = "";
+                    OPENER_QUADRANT_TEXTBOX.Text = "";
+                    O_TWO_TEXTBOX.Text = "";
+                    O_TWO_QUADRANT_TEXTBOX.Text = "";
                 }
                 else
                 {
-                    battingArm = "R";
-                    // Just an Extra Check
-                    if (LEFT_CHECKBOX.Checked)
-                    {
-
-                        MessageBox.Show("You broke the checkbox... again");
-                        checkBoxW = false;
-                        sqlConnection.Close();
-                    }
+                    MessageBox.Show("Try Again");
                 }
-                if (checkBoxW)
-                {
-                    // Query to Insert
-                    String queryInsert = "INSERT INTO moundAppearances VALUES ('" + PITCHER_SELECT_COMBOBOX.Text + "', '" + throwingArm + "', '" + battingArm +
-                        "', '" + OPENER_TEXTBOX.Text + "', " + Int32.Parse(OPENER_QUADRANT_TEXTBOX.Text) + ", '" + O_TWO_TEXTBOX.Text + "', " +
-                        Int32.Parse(O_TWO_QUADRANT_TEXTBOX.Text) + ");";
-
-                    bool passed = false;
-                    try
-                    {
-                        SqlCommand sqlCommand2 = new SqlCommand(queryInsert, sqlConnection);
-                        sqlCommand2.ExecuteNonQuery();
-                        passed = true;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Entry Failed");
-                        sqlConnection.Close();
-                    }
-
-                    if (passed)
-                    {
-                        MessageBox.Show("Successfully Entered");
-                        OPENER_TEXTBOX.Text = "";
-                        OPENER_QUADRANT_TEXTBOX.Text = "";
-                        O_TWO_TEXTBOX.Text = "";
-                        O_TWO_QUADRANT_TEXTBOX.Text = "";
-                    }
-                    else
-                    {
-                        MessageBox.Show("Try Again");
-                    }
-                    sqlConnection.Close();
-                }
+                sqlConnection.Close();
             }
         }
 

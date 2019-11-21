@@ -53,6 +53,7 @@ namespace Baseball_Statistic_Interface
             TeamSelected = TEAM_SELECT_COMBOBOX.Text;
             generalTeamDataScreen1.PopulateGridview(Username, Password, TEAM_SELECT_COMBOBOX.Text);
             moundAppearanceEntryScreen1.PopulatePitchersComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text);
+            plateAppearanceEntryScreen1.PopulateBatterComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text);
         }
 
         private void GENERAL_TEAM_DATA_BUTTON_Click(object sender, EventArgs e)
@@ -60,7 +61,6 @@ namespace Baseball_Statistic_Interface
             if(TEAM_SELECT_COMBOBOX.Text != null && TEAM_SELECT_COMBOBOX.Text != "")
             {
                 generalTeamDataScreen1.BringToFront();
-                generalTeamDataScreen1.PopulateGridview(Username, Password, TEAM_SELECT_COMBOBOX.Text);
             }
             else
             {

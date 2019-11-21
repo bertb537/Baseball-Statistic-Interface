@@ -40,9 +40,9 @@
             this.RESULT_LABEL = new System.Windows.Forms.Label();
             this.TOTAL_PITCHES_TEXTBOX = new System.Windows.Forms.TextBox();
             this.TOTAL_PITCHES_LABEL = new System.Windows.Forms.Label();
-            this.RIGHT_CHECKBOX = new System.Windows.Forms.CheckBox();
-            this.LEFT_CHECKBOX = new System.Windows.Forms.CheckBox();
             this.PITCHER_LABEL = new System.Windows.Forms.Label();
+            this.LEFT_RADIOBUTTON = new System.Windows.Forms.RadioButton();
+            this.RIGHT_RADIOBUTTON = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // SUBMIT_BUTTON
@@ -54,6 +54,7 @@
             this.SUBMIT_BUTTON.TabIndex = 44;
             this.SUBMIT_BUTTON.Text = "Submit";
             this.SUBMIT_BUTTON.UseVisualStyleBackColor = true;
+            this.SUBMIT_BUTTON.Click += new System.EventHandler(this.SUBMIT_BUTTON_Click);
             // 
             // SELECT_BATTER_LABEL
             // 
@@ -67,6 +68,7 @@
             // 
             // BATTER_SELECT_COMBOBOX
             // 
+            this.BATTER_SELECT_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.BATTER_SELECT_COMBOBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BATTER_SELECT_COMBOBOX.FormattingEnabled = true;
             this.BATTER_SELECT_COMBOBOX.Location = new System.Drawing.Point(406, 211);
@@ -91,6 +93,8 @@
             this.FINAL_QUADRANT_TEXTBOX.Name = "FINAL_QUADRANT_TEXTBOX";
             this.FINAL_QUADRANT_TEXTBOX.Size = new System.Drawing.Size(92, 31);
             this.FINAL_QUADRANT_TEXTBOX.TabIndex = 64;
+            this.FINAL_QUADRANT_TEXTBOX.TextChanged += new System.EventHandler(this.FINAL_QUADRANT_TEXTBOX_TextChanged);
+            this.FINAL_QUADRANT_TEXTBOX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FINAL_QUADRANT_TEXTBOX_KeyPress);
             // 
             // FINAL_QUADRANT_LABEL
             // 
@@ -123,6 +127,7 @@
             // 
             // RESULT_TEXTBOX
             // 
+            this.RESULT_TEXTBOX.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.RESULT_TEXTBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RESULT_TEXTBOX.Location = new System.Drawing.Point(658, 282);
             this.RESULT_TEXTBOX.Name = "RESULT_TEXTBOX";
@@ -141,12 +146,13 @@
             // 
             // TOTAL_PITCHES_TEXTBOX
             // 
-            this.TOTAL_PITCHES_TEXTBOX.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TOTAL_PITCHES_TEXTBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TOTAL_PITCHES_TEXTBOX.Location = new System.Drawing.Point(406, 282);
             this.TOTAL_PITCHES_TEXTBOX.Name = "TOTAL_PITCHES_TEXTBOX";
             this.TOTAL_PITCHES_TEXTBOX.Size = new System.Drawing.Size(92, 31);
             this.TOTAL_PITCHES_TEXTBOX.TabIndex = 58;
+            this.TOTAL_PITCHES_TEXTBOX.TextChanged += new System.EventHandler(this.TOTAL_PITCHES_TEXTBOX_TextChanged);
+            this.TOTAL_PITCHES_TEXTBOX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TOTAL_PITCHES_TEXTBOX_KeyPress);
             // 
             // TOTAL_PITCHES_LABEL
             // 
@@ -158,28 +164,6 @@
             this.TOTAL_PITCHES_LABEL.TabIndex = 57;
             this.TOTAL_PITCHES_LABEL.Text = "Total Pitches:";
             // 
-            // RIGHT_CHECKBOX
-            // 
-            this.RIGHT_CHECKBOX.AutoSize = true;
-            this.RIGHT_CHECKBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RIGHT_CHECKBOX.Location = new System.Drawing.Point(481, 411);
-            this.RIGHT_CHECKBOX.Name = "RIGHT_CHECKBOX";
-            this.RIGHT_CHECKBOX.Size = new System.Drawing.Size(66, 24);
-            this.RIGHT_CHECKBOX.TabIndex = 67;
-            this.RIGHT_CHECKBOX.Text = "Right";
-            this.RIGHT_CHECKBOX.UseVisualStyleBackColor = true;
-            // 
-            // LEFT_CHECKBOX
-            // 
-            this.LEFT_CHECKBOX.AutoSize = true;
-            this.LEFT_CHECKBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LEFT_CHECKBOX.Location = new System.Drawing.Point(419, 411);
-            this.LEFT_CHECKBOX.Name = "LEFT_CHECKBOX";
-            this.LEFT_CHECKBOX.Size = new System.Drawing.Size(56, 24);
-            this.LEFT_CHECKBOX.TabIndex = 66;
-            this.LEFT_CHECKBOX.Text = "Left";
-            this.LEFT_CHECKBOX.UseVisualStyleBackColor = true;
-            // 
             // PITCHER_LABEL
             // 
             this.PITCHER_LABEL.AutoSize = true;
@@ -190,12 +174,36 @@
             this.PITCHER_LABEL.TabIndex = 65;
             this.PITCHER_LABEL.Text = "Pitcher:";
             // 
+            // LEFT_RADIOBUTTON
+            // 
+            this.LEFT_RADIOBUTTON.AutoSize = true;
+            this.LEFT_RADIOBUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LEFT_RADIOBUTTON.Location = new System.Drawing.Point(406, 411);
+            this.LEFT_RADIOBUTTON.Name = "LEFT_RADIOBUTTON";
+            this.LEFT_RADIOBUTTON.Size = new System.Drawing.Size(55, 24);
+            this.LEFT_RADIOBUTTON.TabIndex = 66;
+            this.LEFT_RADIOBUTTON.TabStop = true;
+            this.LEFT_RADIOBUTTON.Text = "Left";
+            this.LEFT_RADIOBUTTON.UseVisualStyleBackColor = true;
+            // 
+            // RIGHT_RADIOBUTTON
+            // 
+            this.RIGHT_RADIOBUTTON.AutoSize = true;
+            this.RIGHT_RADIOBUTTON.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RIGHT_RADIOBUTTON.Location = new System.Drawing.Point(467, 411);
+            this.RIGHT_RADIOBUTTON.Name = "RIGHT_RADIOBUTTON";
+            this.RIGHT_RADIOBUTTON.Size = new System.Drawing.Size(65, 24);
+            this.RIGHT_RADIOBUTTON.TabIndex = 67;
+            this.RIGHT_RADIOBUTTON.TabStop = true;
+            this.RIGHT_RADIOBUTTON.Text = "Right";
+            this.RIGHT_RADIOBUTTON.UseVisualStyleBackColor = true;
+            // 
             // PlateAppearanceEntryScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.RIGHT_CHECKBOX);
-            this.Controls.Add(this.LEFT_CHECKBOX);
+            this.Controls.Add(this.RIGHT_RADIOBUTTON);
+            this.Controls.Add(this.LEFT_RADIOBUTTON);
             this.Controls.Add(this.PITCHER_LABEL);
             this.Controls.Add(this.FINAL_QUADRANT_TEXTBOX);
             this.Controls.Add(this.FINAL_QUADRANT_LABEL);
@@ -231,8 +239,8 @@
         private System.Windows.Forms.Label RESULT_LABEL;
         private System.Windows.Forms.TextBox TOTAL_PITCHES_TEXTBOX;
         private System.Windows.Forms.Label TOTAL_PITCHES_LABEL;
-        private System.Windows.Forms.CheckBox RIGHT_CHECKBOX;
-        private System.Windows.Forms.CheckBox LEFT_CHECKBOX;
         private System.Windows.Forms.Label PITCHER_LABEL;
+        private System.Windows.Forms.RadioButton LEFT_RADIOBUTTON;
+        private System.Windows.Forms.RadioButton RIGHT_RADIOBUTTON;
     }
 }

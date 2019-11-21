@@ -42,6 +42,7 @@
             this.SUBMIT_BUTTON.TabIndex = 41;
             this.SUBMIT_BUTTON.Text = "Submit";
             this.SUBMIT_BUTTON.UseVisualStyleBackColor = true;
+            this.SUBMIT_BUTTON.Click += new System.EventHandler(this.SUBMIT_BUTTON_Click);
             // 
             // SELECT_BATTER_LABEL
             // 

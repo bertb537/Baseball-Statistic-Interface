@@ -55,7 +55,7 @@ namespace Baseball_Statistic_Interface
             moundAppearanceEntryScreen1.PopulatePitchersComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text);
             plateAppearanceEntryScreen1.PopulateBatterComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text);
             pitcherDataSelectScreen1.PopulatePitcherComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text, pitcherDataDisplayScreen1);
-            batterInfoSelectScreen1.PopulatePitcherComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text, pitcherDataDisplayScreen1);
+            batterInfoSelectScreen1.PopulatePitcherComboBox(Username, Password, TEAM_SELECT_COMBOBOX.Text, batterDataDisplayScreen1, batterDataDisplayScreenTwo1);
         }
 
         private void GENERAL_TEAM_DATA_BUTTON_Click(object sender, EventArgs e)

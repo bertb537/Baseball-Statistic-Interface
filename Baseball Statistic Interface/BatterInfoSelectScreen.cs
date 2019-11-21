@@ -16,7 +16,8 @@ namespace Baseball_Statistic_Interface
         public string Username { get; set; }
         public string Password { get; set; }
         public string TeamName { get; set; }
-        public PitcherDataDisplayScreen pitcherDataDisplayScreen1 { get; set; }
+        public BatterDataDisplayScreen BatterDataDisplayScreen1 { get; set; }
+        public BatterDataDisplayScreenTwo BatterDataDisplayScreen2 { get; set; }
 
         public BatterInfoSelectScreen()
         {
@@ -28,12 +29,13 @@ namespace Baseball_Statistic_Interface
 
         }
 
-        public void PopulatePitcherComboBox(string username, string password, string teamName, PitcherDataDisplayScreen pitcherDataDisplayScreen)
+        public void PopulatePitcherComboBox(string username, string password, string teamName, BatterDataDisplayScreen batterDataDisplayScreen, BatterDataDisplayScreenTwo batterDataDisplayScreen2)
         {
             Username = username;
             Password = password;
             TeamName = teamName;
-            pitcherDataDisplayScreen1 = pitcherDataDisplayScreen;
+            BatterDataDisplayScreen1 = batterDataDisplayScreen;
+            BatterDataDisplayScreen2 = batterDataDisplayScreen2;
 
             // Initialize Connection Strings
             String connectionString = "server=aura.cset.oit.edu, 5433; database=BonBon; UID=" + username + "; password=" + password;
@@ -59,6 +61,19 @@ namespace Baseball_Statistic_Interface
         private void BATTER_SELECT_COMBOBOX_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void SUBMIT_BUTTON_Click(object sender, EventArgs e)
+        {
+            if (BATTER_SELECT_COMBOBOX.Text != "")
+            {
+                BatterDataDisplayScreen1.UpdateTables(Username, Password, TeamName, BATTER_SELECT_COMBOBOX.Text, BatterDataDisplayScreen1, BatterDataDisplayScreen2);
+                BatterDataDisplayScreen1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Please Select a Pitcher");
+            }
         }
     }
 }

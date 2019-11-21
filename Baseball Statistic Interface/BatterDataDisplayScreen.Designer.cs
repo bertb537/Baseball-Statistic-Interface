@@ -46,6 +46,12 @@
             this.RIGHT_SO_PITCH_DATAGRIDVIEW = new System.Windows.Forms.DataGridView();
             this.RIGHT_HAND_BATTER_LABEL = new System.Windows.Forms.Label();
             this.NEXT_BUTTON = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -72,7 +78,7 @@
             // 
             this.AVG_LABEL.AutoSize = true;
             this.AVG_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AVG_LABEL.Location = new System.Drawing.Point(345, 22);
+            this.AVG_LABEL.Location = new System.Drawing.Point(308, 22);
             this.AVG_LABEL.Name = "AVG_LABEL";
             this.AVG_LABEL.Size = new System.Drawing.Size(107, 25);
             this.AVG_LABEL.TabIndex = 7;
@@ -102,7 +108,7 @@
             // 
             this.OBP_LABEL.AutoSize = true;
             this.OBP_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OBP_LABEL.Location = new System.Drawing.Point(458, 22);
+            this.OBP_LABEL.Location = new System.Drawing.Point(430, 22);
             this.OBP_LABEL.Name = "OBP_LABEL";
             this.OBP_LABEL.Size = new System.Drawing.Size(107, 25);
             this.OBP_LABEL.TabIndex = 9;
@@ -112,7 +118,7 @@
             // 
             this.SLG_LABEL.AutoSize = true;
             this.SLG_LABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLG_LABEL.Location = new System.Drawing.Point(571, 22);
+            this.SLG_LABEL.Location = new System.Drawing.Point(555, 22);
             this.SLG_LABEL.Name = "SLG_LABEL";
             this.SLG_LABEL.Size = new System.Drawing.Size(105, 25);
             this.SLG_LABEL.TabIndex = 10;
@@ -146,6 +152,9 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.label5);
+            this.splitContainer1.Panel1.Controls.Add(this.label3);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.LEFT_CURVEBALL_DATAGRIDVIEW);
             this.splitContainer1.Panel1.Controls.Add(this.LEFT_FASTBALL_DATAGRIDVIEW);
             this.splitContainer1.Panel1.Controls.Add(this.LEFT_SO_PITCH_DATAGRIDVIEW);
@@ -154,6 +163,9 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.label6);
+            this.splitContainer1.Panel2.Controls.Add(this.label4);
+            this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.RIGHT_CURVEBALL_DATAGRIDVIEW);
             this.splitContainer1.Panel2.Controls.Add(this.RIGHT_FASTBALL_DATAGRIDVIEW);
             this.splitContainer1.Panel2.Controls.Add(this.RIGHT_SO_PITCH_DATAGRIDVIEW);
@@ -164,26 +176,29 @@
             // 
             // LEFT_CURVEBALL_DATAGRIDVIEW
             // 
+            this.LEFT_CURVEBALL_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.LEFT_CURVEBALL_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LEFT_CURVEBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 445);
+            this.LEFT_CURVEBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 465);
             this.LEFT_CURVEBALL_DATAGRIDVIEW.Name = "LEFT_CURVEBALL_DATAGRIDVIEW";
-            this.LEFT_CURVEBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
+            this.LEFT_CURVEBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 159);
             this.LEFT_CURVEBALL_DATAGRIDVIEW.TabIndex = 7;
             // 
             // LEFT_FASTBALL_DATAGRIDVIEW
             // 
+            this.LEFT_FASTBALL_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.LEFT_FASTBALL_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LEFT_FASTBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 258);
+            this.LEFT_FASTBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 280);
             this.LEFT_FASTBALL_DATAGRIDVIEW.Name = "LEFT_FASTBALL_DATAGRIDVIEW";
-            this.LEFT_FASTBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
+            this.LEFT_FASTBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 159);
             this.LEFT_FASTBALL_DATAGRIDVIEW.TabIndex = 6;
             // 
             // LEFT_SO_PITCH_DATAGRIDVIEW
             // 
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.LEFT_SO_PITCH_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LEFT_SO_PITCH_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 71);
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 93);
             this.LEFT_SO_PITCH_DATAGRIDVIEW.Name = "LEFT_SO_PITCH_DATAGRIDVIEW";
-            this.LEFT_SO_PITCH_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
+            this.LEFT_SO_PITCH_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 159);
             this.LEFT_SO_PITCH_DATAGRIDVIEW.TabIndex = 5;
             this.LEFT_SO_PITCH_DATAGRIDVIEW.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LEFT_SO_PITCH_DATAGRIDVIEW_CellContentClick);
             // 
@@ -199,26 +214,30 @@
             // 
             // RIGHT_CURVEBALL_DATAGRIDVIEW
             // 
+            this.RIGHT_CURVEBALL_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RIGHT_CURVEBALL_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RIGHT_CURVEBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 445);
+            this.RIGHT_CURVEBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 465);
             this.RIGHT_CURVEBALL_DATAGRIDVIEW.Name = "RIGHT_CURVEBALL_DATAGRIDVIEW";
-            this.RIGHT_CURVEBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
+            this.RIGHT_CURVEBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 159);
             this.RIGHT_CURVEBALL_DATAGRIDVIEW.TabIndex = 10;
             // 
             // RIGHT_FASTBALL_DATAGRIDVIEW
             // 
+            this.RIGHT_FASTBALL_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RIGHT_FASTBALL_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RIGHT_FASTBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 258);
+            this.RIGHT_FASTBALL_DATAGRIDVIEW.Location = new System.Drawing.Point(4, 280);
             this.RIGHT_FASTBALL_DATAGRIDVIEW.Name = "RIGHT_FASTBALL_DATAGRIDVIEW";
-            this.RIGHT_FASTBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
+            this.RIGHT_FASTBALL_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 159);
             this.RIGHT_FASTBALL_DATAGRIDVIEW.TabIndex = 9;
+            this.RIGHT_FASTBALL_DATAGRIDVIEW.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RIGHT_FASTBALL_DATAGRIDVIEW_CellContentClick);
             // 
             // RIGHT_SO_PITCH_DATAGRIDVIEW
             // 
+            this.RIGHT_SO_PITCH_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RIGHT_SO_PITCH_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RIGHT_SO_PITCH_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 71);
+            this.RIGHT_SO_PITCH_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 93);
             this.RIGHT_SO_PITCH_DATAGRIDVIEW.Name = "RIGHT_SO_PITCH_DATAGRIDVIEW";
-            this.RIGHT_SO_PITCH_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 181);
+            this.RIGHT_SO_PITCH_DATAGRIDVIEW.Size = new System.Drawing.Size(497, 159);
             this.RIGHT_SO_PITCH_DATAGRIDVIEW.TabIndex = 8;
             // 
             // RIGHT_HAND_BATTER_LABEL
@@ -240,6 +259,67 @@
             this.NEXT_BUTTON.TabIndex = 14;
             this.NEXT_BUTTON.Text = "Next";
             this.NEXT_BUTTON.UseVisualStyleBackColor = true;
+            this.NEXT_BUTTON.Click += new System.EventHandler(this.NEXT_BUTTON_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Strike Out:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 25);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Strike Out:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 255);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 25);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Fastball:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 255);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 25);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Fastball:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 440);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 25);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Curveball:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 440);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(109, 25);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Curveball:";
             // 
             // BatterDataDisplayScreen
             // 
@@ -295,5 +375,11 @@
         private System.Windows.Forms.DataGridView RIGHT_FASTBALL_DATAGRIDVIEW;
         private System.Windows.Forms.DataGridView RIGHT_SO_PITCH_DATAGRIDVIEW;
         private System.Windows.Forms.Button NEXT_BUTTON;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }

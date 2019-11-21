@@ -58,6 +58,7 @@
             this.PLAYER_NAME_LABEL.Size = new System.Drawing.Size(141, 25);
             this.PLAYER_NAME_LABEL.TabIndex = 0;
             this.PLAYER_NAME_LABEL.Text = "Player Name:";
+            this.PLAYER_NAME_LABEL.Click += new System.EventHandler(this.PLAYER_NAME_LABEL_Click);
             // 
             // LEFT_RIGHT_HAND_BATTER
             // 
@@ -83,6 +84,7 @@
             // 
             // LEFT_O_TWO_DATAGRIDVIEW
             // 
+            this.LEFT_O_TWO_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.LEFT_O_TWO_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.LEFT_O_TWO_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 384);
             this.LEFT_O_TWO_DATAGRIDVIEW.Name = "LEFT_O_TWO_DATAGRIDVIEW";
@@ -91,6 +93,7 @@
             // 
             // LEFT_OPENER_DATAGRIDVIEW
             // 
+            this.LEFT_OPENER_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.LEFT_OPENER_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.LEFT_OPENER_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 64);
             this.LEFT_OPENER_DATAGRIDVIEW.Name = "LEFT_OPENER_DATAGRIDVIEW";
@@ -109,6 +112,7 @@
             // 
             // RIGHT_O_TWO_DATAGRIDVIEW
             // 
+            this.RIGHT_O_TWO_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RIGHT_O_TWO_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.RIGHT_O_TWO_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 384);
             this.RIGHT_O_TWO_DATAGRIDVIEW.Name = "RIGHT_O_TWO_DATAGRIDVIEW";
@@ -117,6 +121,7 @@
             // 
             // RIGHT_OPENER_DATAGRIDVIEW
             // 
+            this.RIGHT_OPENER_DATAGRIDVIEW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RIGHT_OPENER_DATAGRIDVIEW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.RIGHT_OPENER_DATAGRIDVIEW.Location = new System.Drawing.Point(3, 64);
             this.RIGHT_OPENER_DATAGRIDVIEW.Name = "RIGHT_OPENER_DATAGRIDVIEW";

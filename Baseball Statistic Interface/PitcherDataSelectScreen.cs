@@ -37,7 +37,7 @@ namespace Baseball_Statistic_Interface
 
             // Initialize Connection Strings
             String connectionString = "server=aura.cset.oit.edu, 5433; database=BonBon; UID=" + username + "; password=" + password;
-            String query = "SELECT batting.player_name FROM batting LEFT JOIN player ON batting.player_name = player.player_name WHERE team_name = '" + teamName + "';";
+            String query = "SELECT pitching.player_name FROM pitching LEFT JOIN player ON pitching.player_name = player.player_name WHERE team_name = '" + teamName + "';";
 
             // Initialize SQL Objects
             SqlConnection sqlConnection = new SqlConnection(connectionString);
@@ -59,6 +59,7 @@ namespace Baseball_Statistic_Interface
         {
             if(PITCHER_SELECT_COMBOBOX.Text != "")
             {
+                pitcherDataDisplayScreen1.UpdateTables(Username, Password, TeamName, PITCHER_SELECT_COMBOBOX.Text);
                 pitcherDataDisplayScreen1.BringToFront();
             }
             else

@@ -47,6 +47,7 @@ namespace Baseball_Statistic_Interface
             myReader = sqlCommand.ExecuteReader();
 
             // Read Values
+            PITCHER_SELECT_COMBOBOX.Items.Clear();
             while (myReader.Read())
             {
                 string batterName = myReader.GetString(0);
